@@ -1,0 +1,157 @@
+
+nav {
+  /* Add your styles here */
+  position: fixed;
+  width: 24%;
+  height: 100%;
+}
+
+.nav-content {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Upper section of the navigation */
+.upper-content {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Header section containing title and close button */
+nav .header {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+}
+
+nav .header h1 {
+  /* Add your styles here */
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav .header button {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Logo section with circle and user images */
+.logo {
+  /* Add your styles here */
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 243px;
+  margin-bottom: 30px;
+}
+
+.logo img:nth-child(1) {
+  /* Add your styles here */
+  position: absolute;
+  width: 232px;
+  height: 232px;
+  filter: invert(1);
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #00000057;
+}
+/* Contact information links */
+.upper-content h2 {
+  /* Add your styles here */
+  font-size: 17px;
+  color: #fff;
+}
+
+.upper-content h2 a {
+  /* Add your styles here */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* Copyright text */
+.upper-content h4 {
+  /* Add your styles here */
+  font-size: 14px;
+  color: #ffffffa6;
+  font-weight: 400;
+  margin-top: 33px;
+}
+
+/* Social media links container */
+.social-links {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.social-links a {
+  /* Add your styles here */
+  text-decoration: none;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* Lower section of the navigation */
+.lower-content {
+  /* Add your styles here */
+  margin-bottom: 30px;
+}
+
+.lower-content a {
+  /* Add your styles here */
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 45px;
+  border-radius: 50px;
+  filter: blur(0.4px);
+}

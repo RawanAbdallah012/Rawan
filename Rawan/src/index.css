@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+  --font-family: 'Tajawal', sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --line-height: 1.5;
+  --color-primary: #000;
+  --color-secondary: #fff;
+}
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  color: var(--color-primary);
+  background-color: #a1a1a1;
+  background: linear-gradient(135deg, #161616 0%, #161616 25%, #161616 50%, #161616 75%, #161616 100%);
+  background-size: 200% 200%;
+  animation: metallicMove 6s ease infinite;
+  color: #fff;
+  scroll-behavior: smooth;
+
+}
+
+
+/* Blurred overlay fixed at bottom of screen */
+.blur-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 74px;
+  background: linear-gradient(to top, rgb(255 255 255 / 5%), transparent);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(20px);
+  pointer-events: none;
+  z-index: 1000;
+
+}
+
+/* Lenis Smooth Scroll Styles */
+
+/* Remove default smooth scroll behavior */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* Lenis smooth scroll container */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
+}
+
+

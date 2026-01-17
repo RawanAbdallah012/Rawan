@@ -1,0 +1,543 @@
+/* Hero Component Styles */
+
+/* Main hero section */
+  .hero {
+  /* Add your styles here */
+  margin: 10px;
+}
+
+/* Hero content section */
+.hero-content {
+  position: relative;
+  padding: 30px;
+  min-height: 118vh;
+}
+
+/* Animated Background Styles */
+.animated-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  overflow: hidden;
+}
+
+/* Floating particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: float 8s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
+/* Animated chart bars */
+.chart-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  opacity: 0.3;
+}
+
+.chart-bar {
+  fill: rgba(100, 200, 255, 0.6);
+  transition: height 1s ease, y 1s ease;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.chart-bar.up {
+  fill: rgba(100, 255, 150, 0.6);
+}
+
+.chart-bar.down {
+  fill: rgba(255, 100, 100, 0.6);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+/* Animated lines */
+.lines-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.animated-line {
+  fill: none;
+  stroke: rgba(100, 200, 255, 0.8);
+  stroke-width: 0.3;
+  stroke-dasharray: 200;
+  animation: dash 4s linear infinite;
+}
+
+.line-2 {
+  stroke: rgba(100, 255, 200, 0.8);
+  animation-delay: 1s;
+}
+
+.line-3 {
+  stroke: rgba(255, 100, 200, 0.8);
+  animation-delay: 2s;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Floating stats */
+.floating-stat {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px 20px;
+  animation: floatStat 3s ease-in-out infinite;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stat-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes floatStat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Grid overlay */
+.grid-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+}
+
+.grid-line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  animation: gridPulse 3s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+  0%,
+  100% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+
+/* Header section */
+.hero .header {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.hero .header h1 {
+  /* Add your styles here */
+  font-size: 85px;
+  font-weight: 700;
+}
+
+.hero .header h2 {
+  /* Add your styles here */
+  font-size: 17px;
+  width: 200px;
+  font-weight: 300;
+}
+
+.hero .header div {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Word section */
+.word {
+  /* Add your styles here */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 50px;
+  width: 438px;
+}
+
+.word img {
+  /* Add your styles here */
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.word h2 {
+  /* Add your styles here */
+  font-size: 15px;
+}
+
+/* Hero skills section */
+.hero-skills {
+  /* Add your styles here */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Skills content */
+.skills-content {
+  /* Add your styles here */
+  height: 49%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.skills-content p {
+  /* Add your styles here */
+  font-size: 19px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Skills container with animation */
+.skills {
+  position: relative;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 12px;
+  padding: 10px;
+}
+
+/* Individual skill items with dropping animation */
+.skill {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-150px) rotate(-5deg);
+  animation: brickDrop 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill h4 {
+  font-size: 14px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Different colors and positions for organic brick-wall layout */
+.skill:nth-child(1) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  animation-delay: 0.1s;
+}
+
+.skill:nth-child(2) {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  animation-delay: 0.25s;
+}
+
+.skill:nth-child(3) {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  animation-delay: 0.15s;
+}
+
+.skill:nth-child(4) {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+  animation-delay: 0.35s;
+}
+
+.skill:nth-child(5) {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+  animation-delay: 0.45s;
+}
+
+.skill:nth-child(6) {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+  animation-delay: 0.3s;
+}
+
+/* Professional brick-drop animation with bounce and settle effect */
+@keyframes brickDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px) rotate(-5deg) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(15px) rotate(2deg) scale(1.08);
+  }
+  75% {
+    transform: translateY(-8px) rotate(-1deg) scale(0.98);
+  }
+  90% {
+    transform: translateY(3px) rotate(0.5deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+/* Skills slider */
+.skills-slider {
+  position: relative;
+  height: 49%;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* Slider container */
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 100%;
+  /* Add your styles here */
+}
+
+/* Individual slides */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Different background colors for each slide */
+.slide:nth-child(1) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.slide:nth-child(2) {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.slide:nth-child(3) {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.slide:nth-child(4) {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+}
+
+.slide:nth-child(5) {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+}
+
+.slide:nth-child(6) {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide content */
+.slide h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.slide p {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 80%;
+  position: absolute;
+  left: 133px;
+  bottom: 15px;
+  transform: translate(-50%, -50%);
+}
+
+/* Slider buttons */
+.slider-btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  position: absolute;
+  border: 10px;
+  transform: translate(50%, -50%);
+  margin: 0;
+  bottom: 3px;
+  right: 54px;
+  /* Add your styles here */
+}
+
+.slider-btn button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  /* padding: 12px 20px; */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  backdrop-filter: blur(10px);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.slider-btn button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills {
+    height: 150px;
+  }
+
+  .skill {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .slide h1 {
+    font-size: 1.2rem;
+  }
+
+  .slide p {
+    font-size: 0.9rem;
+  }
+}
