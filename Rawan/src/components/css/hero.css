@@ -414,9 +414,9 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
   opacity: 0;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
@@ -464,19 +464,15 @@
 /* Slide content */
 .slide h1 {
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .slide p {
-  text-align: left;
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 80%;
-  position: absolute;
-  left: 133px;
-  bottom: 15px;
-  transform: translate(-50%, -50%);
+  max-width: 100%;
+  margin: 0;
 }
 
 /* Slider buttons */

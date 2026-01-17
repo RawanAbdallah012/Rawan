@@ -191,20 +191,13 @@ const Hero = () => {
                                     </div>
 
                                     <div className='skill'>
-                                        <h4> Tableau </h4>
-                                    </div>
-
-                                    <div className='skill'>
                                         <h4> Microsoft Power BI </h4>
                                     </div>
 
                                     <div className='skill'>
-                                        <h4> Microsoft Excel </h4>
+                                        <h4> Microsoft Excel & Google Sheets</h4>
                                     </div>
 
-                                    <div className='skill'>
-                                        <h4> Google Sheets </h4>
-                                    </div>
                                 </div>
                             </div>
 
