@@ -23,5 +23,4 @@ Requires Google Chrome. Output: `AlSawyTech-Proposal.pdf`.
 ## Notes
 
 - No prices, costs, or payment terms are included.
-- Phase durations use `[المدة]` placeholders.
 - Technical terms remain in English inside Arabic copy.
